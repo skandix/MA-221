@@ -50,14 +50,14 @@ A is a subset of U
 # Truth Tables
 ## Negation (-p, ~)
 | 	p 	| not(p)|
-|=======|=======|
+|-------|-------|
 |	1	| 	0	|
 |	0	|	1	|
 ### not(p) = 1 - p
 
 ## Conjunction (^, &, .)
 |	p 	|	q	|	p ^ q	|
-========|=======|===========|
+|-------|-------|-----------|
 |	1	|	1	|	  1		|
 |	1	|	0	|	  0		|
 |	0	|	1	|	  0		|
@@ -66,7 +66,7 @@ A is a subset of U
 
 ## Disjunction (v, +)
 |	p 	|	q	|	p v q	|
-|=======|=======|===========|
+|-------|-------|-----------|
 |	1	|	1	|	  1		|
 |	1	|	0	|	  1		|
 |	0	|	1	|	  1		|
@@ -75,7 +75,7 @@ A is a subset of U
 
 ## Conditional (--> , speilvendt(C) )
 |	p 	|	q	|  p --> q	|
-|=======|=======|===========|
+|-------|-------|-----------|
 |	1	|	1	|	  1		|
 |	1	|	0	|	  0		|
 |	0	|	1	|	  1		|
@@ -84,7 +84,7 @@ A is a subset of U
 
 ## Biconditional (<->,  ) iff
 |	p 	|	q	|  p <-> q	|
-|=======|=======|===========|
+|-------|-------|-----------|
 |	1	|	1	|	  1		|
 |	1	|	0	|	  0		|
 |	0	|	1	|	  0		|
@@ -93,7 +93,7 @@ A is a subset of U
 
 ## Excluside Or ((+), ) iff
 |	p 	|	q	|   p v q	|
-|=======|=======|===========|
+|-------|-------|-----------|
 |	1	|	1	|	  0		|
 |	1	|	0	|	  1		|
 |	0	|	1	|	  1		|
@@ -104,7 +104,7 @@ A is a subset of U
 
 ## nand  not and equal 
 |	p 	|	q	| not(p ^ q)|
-|=======|=======|===========|
+|-------|-------|-----------|
 |	1	|	1	|	  0		|
 |	1	|	0	|	  1		|
 |	0	|	1	|	  1		|
@@ -112,7 +112,7 @@ A is a subset of U
 
 ## nand (not and equal) 
 |	p	| not(p ^ p) |
-|=======|============|
+|-------|------------|
 |	1	|	   0	 |
 |	0	|	   1	 |
 ### p nand p <=> not(p)
@@ -149,3 +149,40 @@ not(p v q) <=> not(p) ^ not(q)
 > not((not(p) ^ not(q)))
 > not(not(p)) v not(not(q)) == (DeMorgans)
 > p v q						== (Double Negation)
+
+# Distributive Law
+p ^ (q v r) <=> (p ^ q) v (p ^ r)
+p v (q ^ r) <=> (p v q) ^ (p v r)
+
+# Absorption Law
+p ^ (p ^ q) <=> P
+p v (p ^ q) <=> P
+
+### Example 
+not(not(p)) v ((p v F) ^ not(not(q)))
+
+p v ((p v F) ^ q) == (Double Negation)x2
+p v (p ^ q )	  == (Identity Law)
+P 				  == (Absorption Law)
+
+# Commutativity (v, ^)
+p ^ q <=> q ^ p
+p v q <=> q v p
+
+# Associativity (v, ^)
+p ^ (q ^ r) <=> (p ^q ) ^ r
+
+# Inverse Laws
+p ^ not(p) <=> F 
+p v not(p) <=> T
+
+
+# Conditional Law
+p --> q <=> not(p) v q
+
+|	p 	|	q	| not(p ^ q)|
+|-------|-------|-----------|
+|	1	|	1	|	  0		|
+|	1	|	0	|	  1		|
+|	0	|	1	|	  1		|
+|	0	|	0	|	  1		|
