@@ -1,14 +1,15 @@
-# the empty set
+# Sets
+## the empty set
 	  Ø   = { }
 	 |Ø|  =  0
 	|{Ø}| =  1
 	|{ }| =  0 
 
-# SetBuilder Notation
+## SetBuilder Notation
 	{ form | rule  }
 	{ m/n  | m,n element in Z, n ≠ 0 }
 
-# Cartesian Product AxB
+## Cartesian Product AxB
 
 	A = {a,b,c}
 	B = {0,1}
@@ -20,14 +21,14 @@
 
 	A1 x A2 x ... x An = {(A1, A2, ..., An)| Ai € Ai for all i}
 
-# Subset
+## Subset
 > B is a subset of A if every element in B is also in A.
 ### Example 
 	A = {1,2,3,4,5,6}
 	B = {1,3,4,5}
 	B is a subset of A
 
-# power set 
+## power set 
 	is a set of all possible subsets
 
 	If |A| = n
@@ -43,7 +44,7 @@
 	is A element in P(A)?
 		Yes
 
-# set Operations, Venn Diagrams
+## set Operations, Venn Diagrams
 > each set A is in a universe U 
 	A is a subset of U 
 
@@ -100,8 +101,7 @@
 |	0	|	0	|	  0		|
 	p is not equal to q; then p (+) q = 1
 
-# Sheffer Stroke
-
+## Sheffer Stroke
 ## Nand  (not and equal )
 |	p 	|	q	| not(p ^ q)|
 |-------|-------|-----------|
@@ -196,3 +196,34 @@ p --> q <=> not(p) v q
 	q ^ not(p)					== Identity Laws
 	not(p) ^ q 					== Commutativity
 
+
+# Conditionals 
+
+## Conditional
+	p --> q <=> not(q) v p
+
+## Contrapositive
+	not(q) --> not(p) <=> q v not(p)
+
+## Converse
+	q --> q <=> q v not(p)
+
+## Inverse 
+	not(p) --> not(q) <=> p v not(q)
+
+### Logically Equvialent (Just draw this)
+https://datapor.no/loot/lVyftyrx298.png
+
+
+## Biconditional
+p <-> <=> (p --> q) ^ (q --> p)
+
+|	p 	|	q	|  p <-> q  | p -> q |  	^     |  q --> p   |
+|-------|-------|-----------|--------|------------|------------|
+|	1	|	1	|	  1		|	1	 |	 	1	  |	 	1	   |
+|	1	|	0	|	  0		|	0	 |	 	0	  |	 	1	   |
+|	0	|	1	|	  0		|	1	 |	 	0	  |	 	0	   |
+|	0	|	0	|	  1		|	1	 |	 	1	  |	 	1	   |
+
+# Rules of Inference
+> ∴ == Therefore
