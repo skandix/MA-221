@@ -122,7 +122,7 @@ A is a subset of U
 |	0	|	0	|	  0		|
 ### p is not equal to q; then p (+) q = 1
 
-## Sheffer Stroke
+# Sheffer Stroke
 
 ## nand  not and equal 
 |	p 	|	q	| not(p ^ q)|
