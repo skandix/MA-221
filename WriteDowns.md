@@ -102,7 +102,7 @@
 
 # Sheffer Stroke
 
-## nand  not and equal 
+## Nand  (not and equal )
 |	p 	|	q	| not(p ^ q)|
 |-------|-------|-----------|
 |	1	|	1	|	  0		|
@@ -110,7 +110,7 @@
 |	0	|	1	|	  1		|
 |	0	|	0	|	  1		|
 
-## nand (not and equal) 
+## Nand (not and equal) 
 |	p	| not(p ^ p) |
 |-------|------------|
 |	1	|	   0	 |
@@ -130,7 +130,7 @@
 	P v T <=> True
 	P ^ F <=> False
 
-### example 
+### Example 
 (P v F ) ^ (q v T)
 
 	(P v F) == (Identity Laws) P
@@ -148,7 +148,7 @@
 ### Example
 	not((not(p) ^ not(q)))
 	not(not(p)) v not(not(q)) == (DeMorgans)
-	answer; p v q				== (Double Negation)
+	answer; p v q			  == (Double Negation)
 
 # Distributive Law
 	p ^ (q v r) <=> (p ^ q) v (p ^ r)
@@ -180,9 +180,19 @@ not(not(p)) v ((p v F) ^ not(not(q)))
 # Conditional Law
 p --> q <=> not(p) v q
 
-|	p 	|	q	| not(p ^ q)|
-|-------|-------|-----------|
-|	1	|	1	|	  0		|
-|	1	|	0	|	  1		|
-|	0	|	1	|	  1		|
-|	0	|	0	|	  1		|
+|	p 	|	q	|  p --> q  | not(p) | not(p) v q |
+|-------|-------|-----------|--------|------------|
+|	1	|	1	|	  1		|	1	 |	 	1	  |
+|	1	|	0	|	  0		|	1	 |	 	0	  |
+|	0	|	1	|	  1		|	1	 |	 	0	  |
+|	0	|	0	|	  1		|	1	 |	 	0	  |
+
+
+### Example 
+	not(p ^ q) ^ q
+	( not(p) v not(q) ) ^ q 	== DeMorgan Law
+	(q ^ not(p)) v (q ^ not(q)) == Distributive Law
+	q ^ not(p) v False			== Inverse Laws					
+	q ^ not(p)					== Identity Laws
+	not(p) ^ q 					== Commutativity
+
