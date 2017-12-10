@@ -1,8 +1,8 @@
 # the empty set
-  Ø   = { }
- |Ø|  =  0
-|{Ø}| =  1
-|{ }| =  0 
+	Ø   = { }
+ 	|Ø|  =  0
+	|{Ø}| =  1
+	|{ }| =  0 
 
 # SetBuilder Notation
 { form | rule  }
