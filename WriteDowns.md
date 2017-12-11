@@ -237,8 +237,8 @@ How many ways can we pick a license plate with
 # Logic Laws
 > We can use logical equivalences to reduce complex formulas into simpler ones.
 
-	T0 = Tautology		(Always 1)
-	F0 = Contradiction 	(Always 0)
+	T0 = Tautology		(Always 1, sometimes written as '1', instead of T)
+	F0 = Contradiction 	(Always 0, sometimes written as '0', instead of F)
 
 # Identity Laws
 	P ^ T <=> P
