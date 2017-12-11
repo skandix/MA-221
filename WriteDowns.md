@@ -118,7 +118,7 @@ How many ways can we pick a license plate with
 	  Ø   = { }
 	 |Ø|  =  0
 	|{Ø}| =  1
-	|{ }| =  0 
+	|{ }| =  0 , Because  Ø   = { }
 
 ## SetBuilder Notation
 	{ form | rule  }
@@ -152,12 +152,13 @@ How many ways can we pick a license plate with
 
 ### Example's
 	P(Ø) 	= 0
-
+	
+	A = {Ø}
 	P({Ø}) = {Ø, {Ø}} = 2
 	is A subset in P(A)?
-		No
+		Yes, {Ø} is in P({Ø})
 	is A element in P(A)?
-		Yes
+		Yes, Ø is in P({Ø})
 
 ## set Operations, Venn Diagrams
 > each set A is in a universe U 
