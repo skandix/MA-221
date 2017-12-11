@@ -49,12 +49,12 @@
 	A is a subset of U 
 
 # Truth Tables
-## Negation (-p, ~)
-| 	p 	| not(p)|
+## Negation (¬p, ~) (Same as Not in python)
+| 	p 	| ¬p    |
 |-------|-------|
 |	1	| 	0	|
 |	0	|	1	|
-### not(p) = 1 - p
+### ¬p = 1 - p
 
 ## Conjunction (^, &, .)
 |	p 	|	q	|	p ^ q	|
@@ -74,7 +74,7 @@
 |	0	|	0	|	  0		|
 	p ^ q = max(p,q)
 
-## Conditional (--> , speilvendt(C) )
+## Conditional (--> , ⊃ )
 |	p 	|	q	|  p --> q	|
 |-------|-------|-----------|
 |	1	|	1	|	  1		|
@@ -83,7 +83,7 @@
 |	0	|	0	|	  1		|
 	p --> q == 1; iff p is less than or equal to q;
 
-## Biconditional (<->,  ) iff
+## Biconditional (<->,) iff
 |	p 	|	q	|  p <-> q	|
 |-------|-------|-----------|
 |	1	|	1	|	  1		|
@@ -92,7 +92,7 @@
 |	0	|	0	|	  1		|
 	p == q; then p <-> q = 1
 
-## Excluside Or ((+), ) iff
+## Excluside Or (⊕, ⊻) iff
 |	p 	|	q	|   p v q	|
 |-------|-------|-----------|
 |	1	|	1	|	  0		|
@@ -115,7 +115,7 @@
 |-------|------------|
 |	1	|	   0	 |
 |	0	|	   1	 |
-	p nand p <=> not(p)
+	p nand p <=> ¬p
 
 # Logic Laws
 > We can use logical equivalences to reduce complex formulas into simpler ones.
@@ -127,27 +127,27 @@
 	P v F <=> P
 
 # Domination Laws
-	P v T <=> True
-	P ^ F <=> False
+	P v T <=> T0
+	P ^ F <=> F0
 
 ### Example 
 (P v F ) ^ (q v T)
 
 	(P v F) == (Identity Laws) P
-	(q v T) == (Domination Laws) True
+	(q v T) == (Domination Laws) T0
 	P ^ T   == (Identity Laws) P
 	Answer; P 
 
 # Double Negation
-	not(not(p)) <=> p
+	¬¬p <=> p
 
 # DeMorgan's Law
-	not(p ^ q) <=> not(p) v not(q)
-	not(p v q) <=> not(p) ^ not(q)
+	¬(p ^ q) <=> ¬p v ¬q
+	¬(p v q) <=> ¬p ^ ¬q
 
 ### Example
-	not((not(p) ^ not(q)))
-	not(not(p)) v not(not(q)) == (DeMorgans)
+	¬(¬p ^ ¬q)
+	¬¬p v ¬¬q == (DeMorgans)
 	answer; p v q			  == (Double Negation)
 
 # Distributive Law
@@ -159,7 +159,7 @@
 	p v (p ^ q) <=> P
 
 ### Example 
-not(not(p)) v ((p v F) ^ not(not(q)))
+not(¬p) v ((p v F) ^ not(¬q))
 
 	p v ((p v F) ^ q) == (Double Negation)x2
 	p v (p ^ q )	  == (Identity Law)
@@ -173,14 +173,14 @@ not(not(p)) v ((p v F) ^ not(not(q)))
 	p ^ (q ^ r) <=> (p ^q ) ^ r
 
 # Inverse Laws
-	p ^ not(p) <=> F 
-	p v not(p) <=> T
+	p ^ ¬p <=> F 
+	p v ¬p <=> T
 
 
 # Conditional Law
-p --> q <=> not(p) v q
+p --> q <=> ¬p v q
 
-|	p 	|	q	|  p --> q  | not(p) | not(p) v q |
+|	p 	|	q	|  p --> q  | ¬p | ¬p v q |
 |-------|-------|-----------|--------|------------|
 |	1	|	1	|	  1		|	1	 |	 	1	  |
 |	1	|	0	|	  0		|	1	 |	 	0	  |
@@ -190,26 +190,26 @@ p --> q <=> not(p) v q
 
 ### Example 
 	not(p ^ q) ^ q
-	( not(p) v not(q) ) ^ q 	== DeMorgan Law
-	(q ^ not(p)) v (q ^ not(q)) == Distributive Law
-	q ^ not(p) v False			== Inverse Laws					
-	q ^ not(p)					== Identity Laws
-	not(p) ^ q 					== Commutativity
+	( ¬p v ¬q ) ^ q 	== DeMorgan Law
+	(q ^ ¬p) v (q ^ ¬q) == Distributive Law
+	q ^ ¬p v False			== Inverse Laws					
+	q ^ ¬p					== Identity Laws
+	¬p ^ q 					== Commutativity
 
 
 # Conditionals 
 
 ## Conditional
-	p --> q <=> not(q) v p
+	p --> q <=> ¬q v p
 
 ## Contrapositive
-	not(q) --> not(p) <=> q v not(p)
+	¬q --> ¬p <=> q v ¬p
 
 ## Converse
-	q --> q <=> q v not(p)
+	q --> q <=> q v ¬p
 
 ## Inverse 
-	not(p) --> not(q) <=> p v not(q)
+	¬p --> ¬q <=> p v ¬q
 
 ### Logically Equvialent (Just draw this)
 https://datapor.no/loot/lVyftyrx298.png
@@ -253,9 +253,9 @@ p <-> <=> (p --> q) ^ (q --> p)
 2. Modus Tollens (MTT)
 	
 		P --> q
-		not(P)
+		¬P
 		_______
-		∴ not(p)
+		∴ ¬p
 
 3. Hypothetical Syllogism (HS)
 	
@@ -267,7 +267,7 @@ p <-> <=> (p --> q) ^ (q --> p)
 4. Disjunctive Syllogism (DS)
 	
 		P v q
-		not(P)
+		¬P
 		________
 		∴ q
 
@@ -299,6 +299,7 @@ p <-> <=> (p --> q) ^ (q --> p)
 * ∃ = Extensial 
 	* ∃x == there exists at least one x/ fpr some x
 
+
 		∀x P(x): "For all  x, x is P"
 		∃x P(x): "For some x, x is P"
 
@@ -306,4 +307,16 @@ p <-> <=> (p --> q) ^ (q --> p)
 
 	For every real number n, there is a real number m such that m^2 = n.
 	\					  /  \					    / \				   /
-			  ∀n∈ℝ					∃m∈ℝ 		   : 		m^2		
+			  ∀n∈ℝ					 ∃m∈ℝ 		 : 		 m^2		
+
+## Negating Quantifiers
+* Define ∀x, ∃x for a universe with elements {1,2,..., n}
+
+
+	∀x P(x) <=> p(1) ^ p(2) ^ ... ^ p(n)  
+	∃x P(x) <=> p(1) v p(2) v ... v p(n)
+
+### Example
+	
+	¬∀xP(x) <=> ¬(p(1) ^ p(2) ^ ... ^ p(n))
+
