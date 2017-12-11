@@ -298,3 +298,12 @@ p <-> <=> (p --> q) ^ (q --> p)
 	* ∀x == for all x 
 * ∃ = Extensial 
 	* ∃x == there exists at least one x/ fpr some x
+
+		∀x P(x): "For all  x, x is P"
+		∃x P(x): "For some x, x is P"
+
+### Example
+
+	For every real number n, there is a real number m such that m^2 = n.
+	\					  /  \					    / \				   /
+			  ∀n∈ℝ					∃m∈ℝ 		   : 		m^2		
