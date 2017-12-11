@@ -219,7 +219,7 @@ How many ways can we pick a license plate with
 
 ## Sheffer Stroke
 ## Nand  (not and equal )
-|	p 	|	q	| not(p ^ q)|
+|	p 	|	q	| ¬(p ^ q)|
 |-------|-------|-----------|
 |	1	|	1	|	  0		|
 |	1	|	0	|	  1		|
@@ -227,12 +227,12 @@ How many ways can we pick a license plate with
 |	0	|	0	|	  1		|
 
 ## Nand (not and equal) 
-|	p	| not(p ^ p) |
+|	p	| ¬(p ^ p) |
 |-------|------------|
 |	1	|	   0	 |
 |	0	|	   1	 |
 	p nand p <=> ¬p
-	nand is sometimes written as  ↑: p ↑ q <=> not(p ^ p)
+	nand is sometimes written as  ↑: p ↑ q <=> ¬(p ^ p)
 
 # Logic Laws
 > We can use logical equivalences to reduce complex formulas into simpler ones.
@@ -277,7 +277,7 @@ How many ways can we pick a license plate with
 	p v (p ^ q) <=> P
 
 ### Example 
-not(¬p) v ((p v F) ^ not(¬q))
+¬(¬p) v ((p v F) ^ ¬(¬q))
 
 	p v ((p v F) ^ q) == (Double Negation)x2
 	p v (p ^ q )	  == (Identity Law)
@@ -307,7 +307,7 @@ p --> q <=> ¬p v q
 
 
 ### Example 
-	not(p ^ q) ^ q
+	¬(p ^ q) ^ q
 	( ¬p v ¬q ) ^ q 	== DeMorgan Law
 	(q ^ ¬p) v (q ^ ¬q) == Distributive Law
 	q ^ ¬p v False			== Inverse Laws					
