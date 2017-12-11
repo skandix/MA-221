@@ -297,11 +297,12 @@ p <-> <=> (p --> q) ^ (q --> p)
 * ∀ = Universial
 	* ∀x == for all x 
 * ∃ = Extensial 
-	* ∃x == there exists at least one x/ fpr some x
+	* ∃x == there exists at least one x/ fOr some x
 
 
-		∀x P(x): "For all  x, x is P"
-		∃x P(x): "For some x, x is P"
+			∀x P(x): "For all  x, x is P"			
+			∃x P(x): "For some x, x is P"
+
 
 ### Example
 
@@ -338,7 +339,7 @@ Show that ¬∀xP(x) <=> ∃x[¬P(x)]
 
 		[∀x[∃y[ P(x,y) ^ Q(y)]]]
 	=  ¬[∀x[∃y[ P(x,y) ^ Q(y)]]]
-	=   ∃x¬[∃y[P(x,y) ^ Q(y)]]
+	= 	∃x¬[∃y[P(x,y) ^ Q(y)]]
 	= 	∃x∀y¬[P(x,y) ^ Q(y)] == DeMorgans Law
 	=	∃x∀y[¬P(x,y) ^ ¬Q(y)]
 
