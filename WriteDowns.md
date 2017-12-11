@@ -120,8 +120,8 @@
 # Logic Laws
 > We can use logical equivalences to reduce complex formulas into simpler ones.
 
-	T0 = Tautology	(Always 1)
-	F0 = Tautology	(Always 0)
+	T0 = Tautology		(Always 1)
+	F0 = Contradiction 	(Always 0)
 
 # Identity Laws
 	P ^ T <=> P
