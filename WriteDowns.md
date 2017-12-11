@@ -150,7 +150,7 @@ How many ways can we pick a license plate with
 		|P(A)| = 2^n = 2^(|A|)
 		Each element can be in a subset or not.
 
-### Example
+### Example's
 	P(Ø) 	= 0
 
 	P({Ø}) = {Ø, {Ø}} = 2
