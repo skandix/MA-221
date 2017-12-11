@@ -292,3 +292,9 @@ p <-> <=> (p --> q) ^ (q --> p)
 		∴ p ^ q
 
 # Predicate Logic and Quantifiers
+
+## Quantifiers
+* ∀ = Universial
+	* ∀x == for all x 
+* ∃ = Extensial 
+	* ∃x == there exists at least one x/ fpr some x
