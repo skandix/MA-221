@@ -232,6 +232,7 @@ How many ways can we pick a license plate with
 |	1	|	   0	 |
 |	0	|	   1	 |
 	p nand p <=> ¬p
+	nand is sometimes written as  ↑: p ↑ q <=> not(p ^ p)
 
 # Logic Laws
 > We can use logical equivalences to reduce complex formulas into simpler ones.
