@@ -99,18 +99,19 @@ How many ways can we pick a license plate with
 		S = 2!
 		6!/2!2!
 
-		b)  
-		 . T . L . L . H . S .
+		b)
+		 . T . L . L . H . S . S .
 		 . = 7
-		 Letters = 5
+		 vowels = 5
 		 (7 over 5)
 
 		c)
+		AAAEE
 		A = 3!
 		E = 2!
 		5! / 3!2!
 
-**Answer; (6!/2!2!) x (7 over 5) x (5!/3!2!)**
+**Answer; (6!/2!2!) x (7 over 6) x (5!/3!2!)**
 
 
 # Sets
