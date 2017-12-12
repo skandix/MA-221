@@ -195,8 +195,8 @@ How many ways can we pick a license plate with
 |	p 	|	q	|  p --> q	|
 |-------|-------|-----------|
 |	0	|	0	|	  1		|
-|	0	|	1	|	  0		|
-|	1	|	0	|	  1		|
+|	0	|	1	|	  1		|
+|	1	|	0	|	  0		|
 |	1	|	1	|	  1		|
 	p --> q == 1; iff p is less than or equal to q;
 
@@ -210,7 +210,7 @@ How many ways can we pick a license plate with
 	p == q; then p <-> q = 1
 	note: ¬(p⊕q)= p <-> q and vice verca
 
-## Excluside Or (⊕, ⊻) iff
+## Excluside Or (⊕, ⊻)
 |	p 	|	q	|   p ⊕ q	|
 |-------|-------|-----------|
 |	0	|	0	|	  0		|
