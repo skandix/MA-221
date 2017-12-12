@@ -111,7 +111,7 @@ How many ways can we pick a license plate with
 		E = 2!
 		5! / 3!2!
 
-**Answer; (6!/2!2!) x (7 over 6) x (5!/3!2!)**
+**Answer; (6!/2!2!) x (7 over 5) x (5!/3!2!)**
 
 
 # Sets
