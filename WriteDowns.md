@@ -200,7 +200,7 @@ How many ways can we pick a license plate with
 |	1	|	1	|	  1		|
 	p --> q == 1; iff p is less than or equal to q;
 
-## Biconditional (<->,) iff
+## Biconditional (<->, ≡) iff
 |	p 	|	q	|  p <-> q	|
 |-------|-------|-----------|
 |	0	|	0	|	  1		|
