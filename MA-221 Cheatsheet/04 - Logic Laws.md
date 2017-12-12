@@ -37,7 +37,7 @@
 	p v (q ^ r) <=> (p v q) ^ (p v r)
 
 # Absorption Law
-	p ^ (p ^ q) <=> P
+	p ^ (p v q) <=> P
 	p v (p ^ q) <=> P
 
 ### Example 
