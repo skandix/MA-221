@@ -13,5 +13,6 @@
 * 08 - Finite State Machines [WIP]
 * 09 - Properties of numbers [WIP]
 * 10 - RSA [WIP]
-* 11 - Generating Functions [WIP]
-* 12 - Elements of coding Theory [WIP]
+* 11 - Inclusion Exclusion Principle [WIP]
+* 12 - Generating Functions [WIP]
+* 13 - Elements of coding Theory [WIP]
