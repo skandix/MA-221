@@ -36,7 +36,7 @@
 		Each element can be in a subset or not.
 
 ### Example's
-	P(Ø) 	= 1 (2^0 = 1)
+	|P(Ø)| 	= 1 (2^0 = 1)
 	
 	A = {Ø}
 	P({Ø}) = {Ø, {Ø}} = 2
