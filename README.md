@@ -1,6 +1,11 @@
 # MA-221
 This repo contains resources and examples on how to solve tasks in the course Dicrete Mathematics 1 - [MA-180](https://www.uia.no/studieplaner/topic/MA-180-G) at University of Agder
 
+# MA-221 vs MA-180
+* MA-221 is the course for bachelor students
+* MA-180 is the course for masters students
+	* it's the same course just diffrent course names
+
 ## WriteDowns.md
 Handy things to write down / remember for Discrete Mathematics Exam
     
