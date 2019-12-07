@@ -112,3 +112,11 @@ How many ways can we pick a license plate with
 		5! / 3!2!
 
 **Answer; (6!/2!2!) x (7 over 5) x (5!/3!2!)**
+
+# Major Counting Formulas
+| Order Is Relevant | Repititions Are Allowed | Type of Result              | Formula |
+|-------------------|-------------------------|-----------------------------|---------|
+| Yes               | No                      | Permutation                 | ![](https://i.imgur.com/y0pLWDp.png)|
+| Yes               | Yes                     | Arrangement                 | ![](https://i.imgur.com/5X06pdO.png)|
+| No                | No                      | Combination                 | ![](https://i.imgur.com/f4nRt2Z.png)|
+| No                | Yes                     | Combination With Repetition | ![](https://i.imgur.com/kHtzhuO.png)|
